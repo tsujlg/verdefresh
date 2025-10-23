@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerdeFresh - Vegetais Frescos no Varejo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão Hambúrguer -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menu Lateral -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="closeBtn" aria-label="Fechar menu">&times;</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <span class="theme-label">Tema</span>
+            <button class="toggle-btn" id="themeToggle" aria-label="Alternar tema">
+                <span class="toggle-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Vegetais Frescos Direto do Campo</h1>
+                    <p>Qualidade premium, frescor garantido e os melhores preços para o seu negócio</p>
+                    <button class="cta-button">Faça Seu Pedido</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos Section -->
+        <section id="produtos" class="produtos">
+            <div class="container">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <div class="produtos-grid">
+                    <div class="produto-card">
+                        <div class="produto-image">🥬</div>
+                        <h3>Folhosos</h3>
+                        <p>Alface, couve, espinafre e muito mais</p>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">🥕</div>
+                        <h3>Raízes</h3>
+                        <p>Cenoura, beterraba, rabanete frescos</p>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">🍅</div>
+                        <h3>Frutos</h3>
+                        <p>Tomate, pimentão, berinjela selecionados</p>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">🥔</div>
+                        <h3>Tubérculos</h3>
+                        <p>Batata, mandioca, inhame de qualidade</p>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">🌽</div>
+                        <h3>Legumes</h3>
+                        <p>Milho, ervilha, vagem fresquinhos</p>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-image">🧅</div>
+                        <h3>Temperos</h3>
+                        <p>Cebola, alho, cebolinha e mais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <h2 class="section-title">Sobre a VerdeFresh</h2>
+                        <p>Há mais de 15 anos no mercado, a VerdeFresh é referência em distribuição de vegetais frescos para o varejo. Trabalhamos diretamente com produtores locais, garantindo produtos de alta qualidade e frescor incomparável.</p>
+                        <p>Nossa missão é levar saúde e qualidade para a mesa dos brasileiros, oferecendo vegetais selecionados com os melhores preços do mercado.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h3>500+</h3>
+                                <p>Clientes Ativos</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>15</h3>
+                                <p>Anos de Experiência</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Frescor Garantido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <div class="info-item">
+                            <h3>📞 Telefone</h3>
+                            <p>(16) 0000-0000</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>📧 Email</h3>
+                            <p>contato@verdefresh.com.br</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>📍 Endereço</h3>
+                            <p>Av. do café, 0000<br>Ribeirão Preto - SP</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>⏰ Horário</h3>
+                            <p>Seg - Sex: 6h às 18h<br>Sábado: 6h às 14h</p>
+                        </div>
+                    </div>
+                    <form class="contato-form">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="email" placeholder="Seu Email" required>
+                        <input type="tel" placeholder="Seu Telefone" required>
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 VerdeFresh - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
